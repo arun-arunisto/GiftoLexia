@@ -1,0 +1,18 @@
+id,manager_id,name,designation
+0,0,Jarrell Rau,c.e.o
+10,0,Dena Cremin,production manager
+20,0,Oda Stiedemann,marketing manager
+30,10,Ashley Davis,plant manager (fabrication)
+40,10,Ayana Greenfelder MD,plant manager(assembly)
+50,30,Abigayle Heathcote,foreman(fabrication)
+60,40,Alexis Becker,foreman(assembly)
+70,50,Erik Hand,worker (fabrication)
+80,50,Jasper Dach,worker (fabrication)
+90,60,Sierra Gerhold,worker(assembly)
+100,60,Clemmie Blanda,worker(assembly)
+110,20,Rod Hoppe,sales head (Chennai region)
+120,20,Veda Bosco,sales head (Bangalore region)
+130,110,Ray Grimes,sales officer (Chennai region)
+140,110,Dayana Dicki,sales officer (Chennai region)
+150,120,Miss Zita Williamson,sales officer (Bangalore region)
+160,120,Maudie Runte,sales officer (Bangalore region)

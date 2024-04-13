@@ -1,0 +1,36 @@
+
+About the data set:
+Please refer the employee data provided along with this note. The data contains id (which is employee id), manager_id (which is manager's employee id), name and designation for each employee in an organization. 
+
+The c.e.o is at the top of the hierarchy. Production manager and marketing manager reports to CEO. Plant managers - both fabrication and assembly, report to production manager. Similarly, foreman (fabrication) reports to plantmanager (fabrication), and foreman (assembly) reports to plantmanager (assembly). Workers report to their respective foremen. In a similar fashion, there is a hierarchy under marketing manager. The id and manager_id values determines the hierarchy.
+
+Problem:
+Organization is developing a reporting platform. Every report is being built in such a way that an employee's data can be viewed only by his/her supervisor and the hierarchy above. 
+
+For example, foreman (fabrication) will be able to view both the fabrication workers reporting to him (70 and 80). At the same time,
+plant manager(fabrication) will be able to view records of foreman(fabrication) and both fabrication workers. Similarly, production manager will be able to view records of both plant managers and all foremen under them and all the workers under each foremen.
+
+Develop a python function that accepts an id (employee id) 
+The function must return the subset of the data set whom the employee has permission to view data records of. 
+
+E.g 1: 
+If input Id is 40, the function must return
+60	40	Alexis Becker	foreman(assembly)
+90	60	Sierra Gerhold	worker(assembly)
+100	60	Clemmie Blanda	worker(assembly)
+
+E.g 2:
+If input Id is 10, the function must return
+30	10	Ashley Davis	plant manager (fabrication)
+40	10	Ayana Greenfelder MD	plant manager(assembly)
+50	30	Abigayle Heathcote	foreman(fabrication)
+60	40	Alexis Becker	foreman(assembly)
+70	50	Erik Hand	worker (fabrication)
+80	50	Jasper Dach	worker (fabrication)
+90	60	Sierra Gerhold	worker(assembly)
+100	60	Clemmie Blanda	worker(assembly)
+
+Note: 
+Although the dataset given is quite small, it can grow quite big. Also, the hierarchy levels can also grow.
+Hence the solution must be generic enough to handle any levels of hierarchies and must also consider performance implications.
+
