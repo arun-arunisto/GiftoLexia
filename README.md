@@ -11,11 +11,11 @@ git clone <repo_name>
 ```
 After that create a virtual environment using `venv`
 ```Command
-python -m venv <env_name>
+python -m venv myenv
 ```
 Then activate the `venv` using the below command
 ```Command
-<env_name>\Scripts\activate
+myenv\Scripts\activate
 ```
 Then install the required packages using below command
 ```Command
